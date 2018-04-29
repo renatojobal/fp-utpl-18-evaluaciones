@@ -28,4 +28,4 @@ x = (c*e-b*f)/(a*e-b*d)
 y = (c*e-b*f)/(a*e-b*d)
 
 # SALIDA
-print("RESPUESTA: \n x = {}f\n y = {}\n".format(x, y))
+print("RESPUESTA: \n x = {}f\n y = {}\n".format(round(x, 3), round(y, 3)))

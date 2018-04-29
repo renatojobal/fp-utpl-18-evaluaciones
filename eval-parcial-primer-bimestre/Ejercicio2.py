@@ -17,7 +17,7 @@ da como resultado:
 # INGRESO DE DATOS
 x = float(input("Ingrese el valor para la variable x: "))
 y = float(input("Ingrese el valor para la variable y: "))
-z = floata(imput(("Ingrese el valor para la variable z: "))
+z = float(input("Ingrese el valor para la variable z: "))
 
 
 # CALCULO
@@ -26,6 +26,6 @@ m = (x+(y/z))/(x-(y/z))
 # SALIDA
 print("Se ha calculado el valor de m a partir de m = (x+(y/z))/(x-(y/z))")
 
-print("El valor de m, en base a las variables:\nx = {}\n y = {}f\n  z = {}f\nda como resultado:\n     m = {}".format(x, y, z, m))
+print("El valor de m, en base a las variables:\nx = {}\n y = {}\n  z = {}\nda como resultado:\n     m = {}".format(x, y, z, round(m, 2)))
 
 

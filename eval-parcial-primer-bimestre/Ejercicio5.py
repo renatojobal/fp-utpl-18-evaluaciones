@@ -19,25 +19,28 @@ n = 4
 suma = 0
 puntuacion = "Sin especificar"
 while (contador <= n):
-    calificacion = input("Ingrese la calificacion "+contador+": ")
-    suma = suma + calificacion; # Las calificaciones e van agregando a la variable suma
+    calificacion = float(input("Ingrese la calificacion {}: ".format(contador)))
+    suma = suma + calificacion  # Las calificaciones se van agregando a la variable suma
     contador = contador + 1
 
 
 # CALCULO
 promedio = (suma)/n
 
-if(promedio >= 90 && promedio <= 100):
+if(promedio >= 90 and promedio <= 100):
     puntuacion = "A"
-elif(promedio >= 80 && promedio < 90):
+elif(promedio >= 80 and promedio < 90):
     puntuacion = "B"
-elif(promedio >= 70 && promedio < 80):
+elif(promedio >= 70 and promedio < 80):
     puntuacion = "C"
 elif(promedio < 70):
-    puntuacion = "D":
+    puntuacion = "D"
 else:
     print("ERROR: Las calificaciones están fuera del rango de 1 a 100.") # En caso de haber ingresado calificaciones incorrectas
 
 
 # SALIDA
-print("El estudiante con el promedio de calificaciones {}, tiene una puntuación de {}\n".format(promedio, puntuacion))
+if promedio >= 1 and promedio <= 100:
+	print("El estudiante con el promedio de calificaciones {}, tiene una puntuación de {}\n".format(promedio, puntuacion))
+else:
+	print("ERROR: Las calificaciones están fuera del rango de 1 a 100.") # En caso de haber ingresado calificaciones incorrectas

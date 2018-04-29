@@ -8,8 +8,11 @@ permita presentar el valor en minutos y segundos del valor dado. Ejemplo:
 '''
 
 # INGRESO DE DATOS
-
-seconds = input("Ingrese los segundos") # La variable "seconds" sirve para poder presentar el original al final
+segundos = 0
+minutos = 0
+horas = 0
+dias = 0
+seconds = float(input("Ingrese los segundos: ")) # La variable "seconds" sirve para poder presentar el original al final
 segundos = seconds
 
 # CALCULO
@@ -27,4 +30,4 @@ while(horas > 24):
 
 
 # SALIDA
-print("%d segundos es igual a %d dias, %d horas, %d minutos y %d segundos\n".format(seconds, dias, horas, minutos, segundos))
+print("{} segundos es igual a {} dias, {} horas, {} minutos y {} segundos\n".format(seconds, dias, horas, minutos, segundos))

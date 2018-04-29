@@ -19,7 +19,7 @@ largo = float(input("Ingrese el largo de la habitación en metros: "))
 ancho = float(input("Ingrese el ancho de la habitación en metro: "))
 
 # CALCULO
-superficie = largo*ancho
+superficie = round(largo*ancho, 3) # 'round' sirve para rendodear el resultado
 
 # SALIDA
 print("La superficie de la habitación es {} metros cuadrados.".format(superficie))

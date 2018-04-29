@@ -20,11 +20,11 @@ if(ventas <= 500):
     aumento = ventas * 0.05
     sueldoTotal = sueldoFijo + aumento
     
-else if(ventas > 500 and ventas <= 1000):
+elif(ventas > 500 and ventas <= 1000):
     aumento = ventas * 0.08
     sueldoTotal = sueldoFijo + aumento
     
-else if(ventas > 1000 and ventas <= 5000):
+elif(ventas > 1000 and ventas <= 5000):
     aumento = ventas * 0.10
     sueldoTotal = sueldoFijo + aumento
     
@@ -34,4 +34,4 @@ else:
 
 
 # SALIDA
-print("El sueldo del asciende a: %.2f USD\n".format(sueldoTotal))
+print("El sueldo del asciende a: {} USD\n".format(sueldoTotal))
