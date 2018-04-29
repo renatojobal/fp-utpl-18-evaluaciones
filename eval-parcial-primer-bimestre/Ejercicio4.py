@@ -7,7 +7,6 @@ resolverlo aplicando las siguientes formulas:
 x = (c*e-b*f)/(a*e-b*d)
 y = (c*e-b*f)/(a*e-b*d)
 
-
 Presentar en pantalla los valores de x y y
 
 @author Renato
